@@ -1,0 +1,5 @@
+canvas {
+  border: solid 30px red;
+  border-bottom: solid 100px red;
+  border-radius: 10px;
+}
