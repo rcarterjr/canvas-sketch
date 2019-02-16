@@ -1,3 +1,4 @@
+alert('Use WASD to etch a sketch!')
 ;(function() {
   var requestAnimationFrame =
     window.requestAnimationFrame ||
@@ -48,8 +49,8 @@ function onKeyUp(event) {
   }
 }
 
-//neccessary variables
-var tickX = 100
+//starting coords
+var tickX = 10
 var tickY = 100
 
 var keyW = false
@@ -58,8 +59,8 @@ var keyS = false
 var keyD = false
 
 //main animation function
-function drawStuff() {
-  window.requestAnimationFrame(drawStuff)
+function draw() {
+  window.requestAnimationFrame(draw)
 
   var c = document.getElementById('canvas')
   var ctx = c.getContext('2d')
@@ -80,4 +81,5 @@ function drawStuff() {
     tickY--
   }
 }
-window.requestAnimationFrame(drawStuff)
+
+window.requestAnimationFrame(draw)
