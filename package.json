@@ -1,0 +1,11 @@
+{
+  "name": "etch",
+  "version": "1.0.0",
+  "description": "Etch-A-Sketch web app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Russell Carter",
+  "license": "ISC"
+}
